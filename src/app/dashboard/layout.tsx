@@ -6,7 +6,6 @@ import {
   LayoutDashboard,
   User,
   Users,
-  Wallet,
   CheckCircle,
   Clock,
   Menu,
@@ -18,8 +17,6 @@ import { Button } from "@/components/ui/button";
 const navigation = [
   { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { name: "My Profile", href: "/dashboard/profile", icon: User },
-  { name: "Family Information", href: "/dashboard/profile/family-information", icon: Users },
-  { name: "Economic Details", href: "/dashboard/profile/economic-details", icon: Wallet },
   { name: "Status", href: "/dashboard/status", icon: CheckCircle },
 ];
 
@@ -124,7 +121,6 @@ export default function DashboardLayout({
         )}
 
         {/* Main Content */}
-        {/* ✅ Outlet replaced with {children} — Next.js App Router pattern */}
         <main className="flex-1 p-4 lg:p-6 min-h-[calc(100vh-4rem)]">
           {children}
         </main>
